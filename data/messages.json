@@ -1,0 +1,74 @@
+{
+  "messages": {
+    "firebase": {
+      "fb_first": {
+          "message": "First message in firebase",
+          "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+          "author": "Hendrik Swanepoel",
+          "profilePic": "http://www.gravatar.com/avatar/a424e1b0ab3a8dee82c25ae0f0804107?s=48&d=identicon"
+      },
+      "fb_second": {
+          "message": "Second message in firebase",
+          "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+          "author": "Stewart Scott",
+          "profilePic": "http://www.gravatar.com/avatar/f544faf10969339692d6d0474050f8fe?s=48&d=identicon"
+      }
+    },
+    "flux": {
+      "flux_first": {
+          "message": "First message in flux",
+          "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+          "author": "Hendrik Swanepoel",
+          "profilePic": "http://www.gravatar.com/avatar/a424e1b0ab3a8dee82c25ae0f0804107?s=48&d=identicon"
+      },
+      "flux_second": {
+          "message": "Second message in flux",
+          "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+          "author": "Stewart Scott",
+          "profilePic": "http://www.gravatar.com/avatar/f544faf10969339692d6d0474050f8fe?s=48&d=identicon"
+      }
+    },
+    "react": {
+      "react_first": {
+          "message": "First message in react",
+          "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+          "author": "Hendrik Swanepoel",
+          "profilePic": "http://www.gravatar.com/avatar/a424e1b0ab3a8dee82c25ae0f0804107?s=48&d=identicon"
+      },
+      "react_second": {
+          "message": "Second message in react",
+          "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+          "author": "Stewart Scott",
+          "profilePic": "http://www.gravatar.com/avatar/f544faf10969339692d6d0474050f8fe?s=48&d=identicon"
+      }
+    },
+    "webpack": {
+      "wp_first": {
+          "message": "First message in webpack",
+          "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+          "author": "Hendrik Swanepoel",
+          "profilePic": "http://www.gravatar.com/avatar/a424e1b0ab3a8dee82c25ae0f0804107?s=48&d=identicon"
+      },
+      "wp_second": {
+          "message": "Second message in webpack",
+          "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+          "author": "Stewart Scott",
+          "profilePic": "http://www.gravatar.com/avatar/f544faf10969339692d6d0474050f8fe?s=48&d=identicon"
+      }
+    }
+  },
+  "channels": {
+    "flux": {
+      "name": "flux"
+    },
+    "react": {
+      "name": "react"
+    },
+    "firebase": {
+      "name": "firebase"
+    },
+    "webpack": {
+      "name": "webpack"
+    }
+  }
+}
