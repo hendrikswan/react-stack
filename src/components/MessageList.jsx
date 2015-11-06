@@ -26,9 +26,9 @@ class MessageList extends React.Component {
     let messageNodes = null;
 
     if(!this.props.messagesLoading){
-      messageNodes = _.values(this.props.messages).map((message)=> {
+      messageNodes = _.values(this.props.messages).map((message, i)=> {
         return (
-          <Message message={message} />
+          <Message message={message} key={i} />
         );
       });
     }else{
