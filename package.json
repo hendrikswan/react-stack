@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --hot --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -26,5 +27,6 @@
     "trim": "0.0.1",
     "webpack": "1.10.5",
     "webpack-dev-server": "1.10.1"
-  }
+  },
+  "devDependencies": {}
 }
