@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --hot --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress --colors",
-    "watch": "webpack --progress --colors --watch"
+    "watch": "webpack --progress --colors --watch",
+    "lint": "eslint src"
   },
   "author": "EMB",
   "license": "MIT",
@@ -17,18 +18,23 @@
     "babel-loader": "5.3.2",
     "css-loader": "0.15.6",
     "firebase": "2.2.9",
+    "history": "^1.13.1",
     "lodash": "3.10.1",
     "material-ui": "0.10.2",
     "node-sass": "3.4.1",
-    "react": "0.13.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
     "react-hot-loader": "1.2.8",
-    "react-router": "0.13.3",
-    "react-tap-event-plugin": "0.1.7",
+    "react-router": "^1.0.2",
     "sass-loader": "1.0.3",
     "style-loader": "0.12.3",
     "trim": "0.0.1",
     "webpack": "1.10.5",
     "webpack-dev-server": "1.10.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.11.3"
+  }
 }

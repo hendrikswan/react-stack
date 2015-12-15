@@ -1,20 +1,16 @@
 import React from 'react';
+import { render } from 'react-dom';
 import App from '../components/App.jsx';
 import Chat from '../components/Chat.jsx';
 import Login from '../components/Login.jsx';
-import Router from 'react-router';
-let Route = Router.Route;
-let DefaultRoute = Router.DefaultRoute;
+import { Router, Route } from 'react-router';
 
-let routes = (
-  <Route path="/" handler={App}>
-    <DefaultRoute handler={Chat} />
-    <Route path="chat" handler={Chat} />
-    <Route path="chat/:channel" handler={Chat} />
-    <Route path="login" handler={Login} />
-  </Route>
-);
-
-Router.run(routes, Router.HashLocation, (Root)=> {
-  React.render(<Root />, document.getElementById('container'));
-});
+render((
+  <Router>
+    <Route component={App} path="/" >
+      <Route component={Chat} path="chat" />
+      <Route component={Chat} path="chat/:channel" />
+      <Route component={Login} path="login" />
+    </Route>
+  </Router>
+), document.getElementById('container'));
