@@ -1,6 +1,6 @@
 import React from 'react';
 
-class App extends React.Component {
+class Example extends React.Component {
   constructor(){
     super();
   }
@@ -9,15 +9,14 @@ class App extends React.Component {
 
     return (
       <div>
-        <header>{`Test App`}</header>
-        {this.props.children}
+        <header>{`I'm Example Component`}</header>
       </div>
     );
   }
 }
 
-App.propTypes = {
+Example.propTypes = {
   children: React.PropTypes.node
 };
 
-export default App;
+export default Example;

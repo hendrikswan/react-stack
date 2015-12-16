@@ -20,7 +20,6 @@
     "firebase": "2.2.9",
     "history": "^1.13.1",
     "lodash": "3.10.1",
-    "material-ui": "0.10.2",
     "node-sass": "3.4.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
