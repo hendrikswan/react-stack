@@ -1,39 +1,47 @@
 {
   "name": "react-stack",
+  "private": true,
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Reusable React Components",
+  "main": "./dist/react-stack.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --progress --colors",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm run build",
     "build": "webpack --progress --colors",
     "watch": "webpack --progress --colors --watch",
-    "lint": "eslint src"
+    "start": "webpack-dev-server --config webpack.demo.config.js --hot --progress --colors",
+    "dev": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run watch\" \"npm start\"",
+    "build-demo": "webpack --config webpack.demo.config.js --progress --colors"
   },
   "author": "EMB",
   "license": "MIT",
-  "dependencies": {
-    "react": "^0.14.3",
-    "react-bootstrap": "^0.28.1",
-    "react-dom": "^0.14.3"
-  },
   "devDependencies": {
+    "alt": "0.17.1",
     "babel-core": "5.8.14",
     "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "5.3.2",
     "bootstrap-sass": "^3.3.6",
     "bootstrap-sass-loader": "^1.0.9",
+    "concurrently": "^1.0.0",
     "css-loader": "^0.23.0",
-    "file-loader": "^0.8.5",
-    "node-sass": "^3.4.2",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.11.3",
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.4.2",
     "react-hot-loader": "1.2.8",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "trim": "0.0.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9",
-    "webpack-dev-server": "1.10.1"    
+    "webpack-dev-server": "1.10.1"
+  },
+  "dependencies": {
+    "firebase": "^2.2.9",
+    "history": "^1.16.0",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "react-bootstrap": "^0.28.1",
+    "react-dom": "^0.14.3",
+    "react-router": "^1.0.2"
   }
 }

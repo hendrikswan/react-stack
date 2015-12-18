@@ -6,16 +6,14 @@ module.exports = {
 
   entry: {
     'react-stack': [
-      'webpack-dev-server/client?http://localhost:8080',
-      'webpack/hot/only-dev-server',
       './src/main.js'
     ]
   },
 
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'lib'),
-    publicPath: '/lib/',
+    path: path.join(__dirname, 'dist'),
+    publicPath: '/dist/',
     libraryTarget: 'umd'
   },
 

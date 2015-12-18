@@ -4,18 +4,22 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
 
+  devServer: {
+    contentBase: './demo'
+  },
+
   entry: {
     main: [
-      'webpack-dev-server/client?http://localhost:8080',
+      'webpack-dev-server/client?http://localhost:8080/',
       'webpack/hot/only-dev-server',
-      './src/index.js'
+      './demo/src/main.js'
     ]
   },
 
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'public'),
-    publicPath: '/public/'
+    publicPath: 'public'
   },
 
   plugins: [
@@ -27,12 +31,12 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        include: path.join(__dirname, 'src'),
+        include: path.join(__dirname, 'demo/src'),
         loader: 'react-hot!babel'
       },
       {
         test: /\.scss$/,
-        include: path.join(__dirname, 'src'),
+        include: path.join(__dirname, 'demo/src'),
         loader: 'style!css!sass'
       },
 

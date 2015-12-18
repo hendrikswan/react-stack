@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-import { Component1, Component2 } from '../../../lib/react-stack';
+import { Component1, Component2 } from '../../../dist/react-stack';
 
 class App extends React.Component {
   constructor(){
