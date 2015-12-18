@@ -5,29 +5,23 @@ module.exports = {
   devtool: 'source-map',
 
   entry: {
-    'react-stack': [
+    main: [
       'webpack-dev-server/client?http://localhost:8080',
       'webpack/hot/only-dev-server',
-      './src/main.js'
+      './src/index.js'
     ]
   },
 
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'lib'),
-    publicPath: '/lib/',
-    libraryTarget: 'umd'
+    path: path.join(__dirname, 'public'),
+    publicPath: '/public/'
   },
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
-
-  externals: {
-    'react': 'react',
-    'react-dom': 'react-dom'
-  },
 
   module: {
     loaders: [

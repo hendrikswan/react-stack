@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Well } from 'react-bootstrap';
 
-class Example extends React.Component {
+class Component2 extends React.Component {
   constructor(){
     super();
   }
@@ -10,15 +10,11 @@ class Example extends React.Component {
 
     return (
       <Well>
-        <header>{`I'm Example Component`}</header>
+        <header>{`I'm Component2`}</header>
         <Button bsStyle="primary">{`Say Hello!!!!`}</Button>
       </Well>
     );
   }
 }
 
-Example.propTypes = {
-  children: React.PropTypes.node
-};
-
-export default Example;
+export default Component2;
