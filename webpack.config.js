@@ -12,8 +12,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'public'),
-    publicPath: '/public/'
+    path: path.join(__dirname, 'lib'),
+    publicPath: '/lib/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
