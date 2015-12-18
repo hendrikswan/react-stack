@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Well } from 'react-bootstrap';
 
 class Example extends React.Component {
   constructor(){
@@ -8,9 +9,10 @@ class Example extends React.Component {
   render(){
 
     return (
-      <div>
+      <Well>
         <header>{`I'm Example Component`}</header>
-      </div>
+        <Button bsStyle="primary">{`Say Hello!!!!`}</Button>
+      </Well>
     );
   }
 }
