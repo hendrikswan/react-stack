@@ -21,6 +21,9 @@
   },
   "rules": {
     "consistent-return": [0],
+    "comma-dangle": [2, "never"],
+    "comma-spacing": 0,
+    "comma-style": [1, "first"],
     "key-spacing": [0],
     "quotes": [0],
     "new-cap": [0],

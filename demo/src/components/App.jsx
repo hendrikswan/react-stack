@@ -1,6 +1,6 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
-import { Component1, Component2 } from '../../../dist/react-stack';
+import { PageHeader, Grid, Row, Col } from 'react-bootstrap';
+import LinksDemo from './LinksDemo.jsx';
 
 class App extends React.Component {
   constructor(){
@@ -10,13 +10,18 @@ class App extends React.Component {
   render(){
 
     return (
-      <section className="container-fluid">
-        <Col>
-          <h1>{`Testing Reusable Components`}</h1>
-          <Component1 />
-          <Component2 />
-        </Col>
-      </section>
+      <Grid>
+        <Row>
+          <Col md={12}>
+            <PageHeader>{`React Reusable Components`}</PageHeader>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6}>
+            <LinksDemo />
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }
