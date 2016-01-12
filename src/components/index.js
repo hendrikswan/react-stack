@@ -6,7 +6,6 @@ import BaseComponent from './BaseComponent.jsx';
 // import InputList from './InputList.jsx';
 // import InputListItem from './InputListItem.jsx';
 // import Nav from './Nav.jsx';
-// import Panel from './Panel.jsx';
 // import ShowMoreButton from './ShowMoreButton.jsx';
 // import Sidebar from './Sidebar.jsx';
 // import Spinner from './Spinner.jsx';
