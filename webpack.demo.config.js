@@ -3,37 +3,37 @@ var path = require('path');
 module.exports = {
   devtool: 'source-map',
 
+  devServer: {
+    contentBase: './demo'
+  },
+
   entry: {
-    'react-stack': [
-      './src/main.js'
+    main: [
+      'webpack-dev-server/client?http://localhost:8080/',
+      'webpack/hot/only-dev-server',
+      './demo/src/main.js'
     ]
   },
 
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'dist'),
-    publicPath: '/dist/',
-    libraryTarget: 'umd'
+    path: path.join(__dirname, 'public'),
+    publicPath: 'public'
   },
 
   plugins: [
   ],
 
-  externals: {
-    'react': 'react',
-    'react-dom': 'react-dom'
-  },
-
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
-        include: path.join(__dirname, 'src'),
+        include: path.join(__dirname, 'demo/src'),
         loader: 'react-hot!babel'
       },
       {
         test: /\.scss$/,
-        include: path.join(__dirname, 'src'),
+        include: path.join(__dirname, 'demo/src'),
         loader: 'style!css!sass'
       },
 
